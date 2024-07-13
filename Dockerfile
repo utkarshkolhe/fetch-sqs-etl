@@ -15,7 +15,7 @@ COPY public_key.pem src/cryptography/rsa_keys/
 
 COPY tests src
 
-# RUN pytest src/
+RUN pytest src/
 
 
 CMD ["python", "src/main.py"]
